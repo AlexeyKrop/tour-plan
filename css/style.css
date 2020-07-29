@@ -433,4 +433,29 @@ template {
   line-height: 18px;
   color: #333333;
 }
+
+.header-menu {
+  background-color: #0A223D;
+}
+
+.header-menu__list {
+  padding-left: 0px;
+}
+
+.header-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header-menu__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
