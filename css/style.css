@@ -355,11 +355,11 @@ template {
   display: none;
 }
 
-.header {
+.navbar {
   background-color: #FFFFFF;
 }
 
-.header-top {
+.navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,15 +434,15 @@ template {
   color: #333333;
 }
 
-.header-menu {
+.navbar-menu {
   background-color: #0A223D;
 }
 
-.header-menu__list {
+.navbar-menu__list {
   padding-left: 0px;
 }
 
-.header-menu__item {
+.navbar-menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,7 +453,7 @@ template {
   padding-bottom: 30px;
 }
 
-.header-menu__link {
+.navbar-menu__link {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
