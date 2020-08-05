@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan-Hotel Booking</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
@@ -141,49 +141,53 @@
             </div>
           </div>
           <div class="booking">
-            <div class="_booking__info">
+            <div class="booking__info">
               <div class="booking__price">
                 <span class="booking__starts">price starts as</span>
                 <strong class="booking__pricetag">$ 8,500</strong>
                 <span class="booking__per-room">per room / night</span>
               </div>
               <!-- /.booking-price -->
+              <div class="booking__per-room">
+                <div class="booking__guest">
+                  <img
+                    src="./img/user.svg"
+                    alt="icon-user"
+                    class="booking__icon"
+                  />
+                  <span class="booking__description">2 x Guests</span>
+                </div>
+                <!-- /.booking__guest -->
+                <div class="booking__guest">
+                  <img
+                    src="./img/room.svg"
+                    alt="icon-room"
+                    class="booking__icon"
+                  />
+                  <span class="booking__description">1 x Room</span>
+                </div>
+                <!-- /.booking__guest -->
+              </div>
+              <!-- /.booking__per-room -->
             </div>
             <!-- /.booking-info -->
-            <div class="booking__per-room">
-              <div class="booking__guest">
-                <img
-                  src="./img/user.svg"
-                  alt="icon-user"
-                  class="booking__icon"
-                />
-                <span class="booking__description">2 x Guests</span>
-              </div>
-              <!-- /.booking__guest -->
-              <div class="booking__room">
-                <img
-                  src="./img/room.svg"
-                  alt="icon-room"
-                  class="booking__icon"
-                />
-                <span class="booking__description">1 x Room</span>
-              </div>
-              <!-- /.booking__room -->
-            </div>
-            <!-- /.booking__per-room -->
             <div class="booking__call-center">
               <span class="booking__reserve">Quick Booking</span>
-              <img
-                src="./img/phone.svg"
-                alt="icon phone"
-                class="booking__icon"
-              />
-              <a href="tel:12100" class="booking__phone">12100</a>
+              <a href="tel:12100" class="booking__phone"
+                ><img
+                  src="./img/phone.svg"
+                  alt="icon phone"
+                  class="booking__icon"
+                />
+                <span class="booking__tel">12100</span>
+              </a>
             </div>
             <!-- /.booking__call-center -->
             <button class="booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
+          <div class="map"></div>
+          <!-- /.map -->
         </div>
       </div>
       <!-- /.container -->
