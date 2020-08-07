@@ -875,6 +875,9 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .hotel-info__text {
+    width: 100%;
+  }
   .hotel-info__rating {
     display: none;
   }
