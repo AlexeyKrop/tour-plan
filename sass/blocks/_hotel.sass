@@ -16,6 +16,53 @@
     line-height: 40px
     margin: 0
     color: $text-color
+  &-slider
+    width: 730px
+    height: 450px
+    margin-left: 0
+    &__item
+      width: 100%
+      height: 100%
+      position: relative
+      border-radius: 8px
+      overflow: hidden       
+      &:after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        z-index: 10
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      width: 30px
+      height: 30px
+      border: none
+      background-color: transparent
+      cursor: pointer
+      background-repeat: no-repeat
+      background-position: center
+      outline: none
+      &--prev
+        left: 18px
+        background-image: url("../img/Vector-left.svg")     
+      &--next
+        right: 18px
+        background-image: url("../img/Vector-right.svg")
+  &-grid
+    display: flex
+    justify-content: space-between
+  &-wrap
+    display: flex
+    flex-direction: column  
+    justify-content: space-between        
 .stars
   flex-basis: 100%      
 .offer
@@ -43,54 +90,9 @@
   &__counter
     font-size: 14px
     line-height: 18px 
-    color: #fff 
-.swiper-container 
-  width: 100%
-  height: 100%
-  position: relative
-  border-radius: 8px  
-  &:after
-    content: ''
-    position: absolute
-    width: 100%
-    height: 100%
-    top: 0
-    bottom: 0
-    z-index: 10
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    color: #fff  
 .swiper-slide
   width: 100%
-.slider
-  width: 730px
-  height: 450px   
-  &-button
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-    z-index: 99
-    width: 30px
-    height: 30px
-    border: none
-    background-color: transparent
-    cursor: pointer
-    background-repeat: no-repeat
-    background-position: center
-    outline: none
-    &__prev
-      left: 18px
-      background-image: url("../img/Vector-left.svg")
-     
-    &__next
-      right: 18px
-      background-image: url("../img/Vector-right.svg")
-.hotel
-  &-grid
-    display: flex
-    justify-content: space-between
-  &-wrap
-    display: flex
-    flex-direction: column  
-    justify-content: space-between
 .booking
   width: 350px  
   min-height: 210px
