@@ -24,3 +24,10 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     onlyInViewport: false,
   },
 });
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log("привет");
+  document
+    .querySelector(".navbar-menu")
+    .classList.toggle("navbar-menu_visited");
+});
