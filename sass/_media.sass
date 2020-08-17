@@ -100,6 +100,8 @@
       display: none
   .navbar
     &-menu
+      &__list
+        padding-top: 20px
       &_visited
         display: block
         position: fixed
@@ -118,7 +120,13 @@
         &_hidden
           display: none
         &_visible
-          display: flex           
+          display: flex
+          flex-direction: column
+    .user
+      &__name
+        color: $light
+        margin-left: 0px
+        margin-top: 10px                 
     &-top            
       &__menu-button
         display: flex
