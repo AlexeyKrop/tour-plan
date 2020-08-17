@@ -467,6 +467,10 @@ template {
   padding-bottom: 30px;
 }
 
+.navbar-menu__item_hidden {
+  display: none;
+}
+
 .navbar-menu__link {
   color: #FFFFFF;
   text-decoration: none;
@@ -1495,6 +1499,11 @@ template {
   }
   .navbar__search_mobile_hidden, .navbar__user_mobile_hidden {
     display: none;
+  }
+  .navbar__search_mobile_visible, .navbar__user_mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .navbar-top__menu-button {
     display: -webkit-box;
