@@ -92,7 +92,6 @@
           </ul>
         </div>
       </nav>
-
       <!-- /.container -->
     </header>
     <!-- /.header -->
@@ -267,11 +266,12 @@
           <span class="newsletter-subscribe__subtitle">Newsletter</span>
         </div>
         <!-- /.newsletter-subscribe -->
-        <form action="#" class="newsletter-form">
+        <form action="send.php" method="POST" class="newsletter-form">
           <input
             type="text"
             class="newsletter-form__input"
             placeholder="Your email address"
+            name="email"
           />
           <button class="newsletter-form__button">Send</button>
         </form>
@@ -601,20 +601,23 @@
           <!-- /.footer__contact-details -->
           <div class="footer__list footer__contact-form">
             <h3 class="footer__title">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 placeholder="Your Full Name"
                 class="input footer__input"
+                name="name"
               />
               <input
                 type="text"
                 placeholder="Phone Number"
                 class="input footer__input"
+                name="phone"
               />
               <textarea
                 class="footer__message"
                 placeholder="message"
+                name="message"
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">*Required Fields</span>

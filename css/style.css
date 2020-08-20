@@ -364,6 +364,11 @@ template {
   background-color: #FFFFFF;
 }
 
+.navbar__search {
+  margin-right: auto;
+  margin-left: 108px;
+}
+
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1511,6 +1516,8 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
   .navbar .user__name {
     color: #FFFFFF;
