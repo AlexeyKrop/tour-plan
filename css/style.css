@@ -17,6 +17,50 @@ img {
   max-width: 100%;
 }
 
+.input {
+  min-height: 50px;
+  padding: 18px 0 17px 22px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message {
+  padding: 18px 23px;
+  min-height: 123px;
+  resize: none;
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.button {
+  min-height: 50px;
+  padding: 17px 65px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: #EC1F46;
+  color: #FFFFFF;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -364,6 +408,11 @@ template {
   background-color: #FFFFFF;
 }
 
+.navbar__search {
+  margin-right: auto;
+  margin-left: 108px;
+}
+
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -465,6 +514,7 @@ template {
           justify-content: space-between;
   padding-top: 30px;
   padding-bottom: 30px;
+  font-size: 14px;
 }
 
 .navbar-menu__item_hidden {
@@ -528,9 +578,6 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -539,7 +586,7 @@ template {
 .hotel-name {
   font-size: 24px;
   line-height: 40px;
-  margin: 0;
+  margin: 0 14px 0 0;
   color: #333333;
 }
 
@@ -703,11 +750,11 @@ template {
 .booking__pricetag {
   font-weight: 800;
   font-size: 24px;
-  line-height: 33px;
 }
 
 .booking__per-room {
   margin-top: 8px;
+  font-size: 12px;
 }
 
 .booking__icon {
@@ -946,7 +993,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .reviews-slider__avatar {
@@ -968,7 +1015,7 @@ template {
 }
 
 .reviews-slider__date {
-  margin: 10px 0 5px 0;
+  margin: 10px 0 0px 0;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -989,7 +1036,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 50%;
+  top: 35%;
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -1002,12 +1049,12 @@ template {
 
 .reviews-slider__button-prev {
   background-image: url(../img/slider-left.svg);
-  left: 0;
+  left: 27px;
 }
 
 .reviews-slider__button-next {
   background-image: url(../img/slider-right.svg);
-  right: 0;
+  right: 7px;
 }
 
 .container {
@@ -1121,8 +1168,8 @@ template {
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
   grid-gap: 20px;
-  grid-auto-rows: minmax(83px, -webkit-min-content);
-  grid-auto-rows: minmax(83px, min-content);
+  grid-auto-rows: minmax(100px, -webkit-min-content);
+  grid-auto-rows: minmax(100px, min-content);
 }
 
 .footer__title {
@@ -1132,10 +1179,12 @@ template {
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
+  text-transform: uppercase;
 }
 
 .footer__title_inline {
   margin: 0 43px 0 0;
+  text-transform: uppercase;
 }
 
 .footer__ul {
@@ -1218,6 +1267,11 @@ template {
           justify-content: space-between;
 }
 
+.footer__legal {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
 .footer__contact-details {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -1249,34 +1303,13 @@ template {
   width: 100%;
   min-height: 50px;
   margin-bottom: 15px;
-  padding: 18px 0 17px 22px;
-  background: #FFFFFF;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
 }
 
 .footer__message {
-  padding: 18px 23px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   min-height: 123px;
   margin-bottom: 23px;
-  resize: none;
-  background: #FFFFFF;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
 }
 
 .footer__button {
@@ -1284,16 +1317,6 @@ template {
   width: 100%;
   min-height: 50px;
   padding: 17px 65px;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  background-color: #EC1F46;
-  color: #FFFFFF;
 }
 
 .footer__info {
@@ -1327,6 +1350,88 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #FFFFFF;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__overlay_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 478px;
+  width: 100%;
+  min-height: 487px;
+  padding: 33px 88px;
+  background-color: #0A223D;
+  color: #FFFFFF;
+  border-radius: 8px;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__dialog_visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__title {
+  margin: 0 0 15px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__close {
+  position: absolute;
+  top: 17px;
+  right: 18px;
+}
+
+.modal__input {
+  max-width: 302px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__message {
+  max-width: 302px;
+  width: 100%;
+  padding: 18px 23px;
+  margin-bottom: 15px;
+}
+
+.modal__button {
+  max-width: 160px;
+  width: 100%;
+  margin-right: 45px;
+}
+
+.modal__info {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
 }
 
 @media (max-width: 1200px) {
@@ -1484,6 +1589,7 @@ template {
     right: 0;
     left: 0;
     bottom: 0;
+    overflow: scroll;
   }
   .navbar-menu__item {
     display: -webkit-box;
@@ -1511,6 +1617,8 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
   .navbar .user__name {
     color: #FFFFFF;
@@ -1552,6 +1660,11 @@ template {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
+  }
+  .hotel-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
@@ -1674,6 +1787,16 @@ template {
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .footer__additional {
     -ms-grid-row: 3;

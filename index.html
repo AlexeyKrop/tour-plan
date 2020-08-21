@@ -92,7 +92,6 @@
           </ul>
         </div>
       </nav>
-
       <!-- /.container -->
     </header>
     <!-- /.header -->
@@ -232,7 +231,9 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button class="booking__button">View Other Options</button>
+              <button data-toggle="modal" class="booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -267,11 +268,12 @@
           <span class="newsletter-subscribe__subtitle">Newsletter</span>
         </div>
         <!-- /.newsletter-subscribe -->
-        <form action="#" class="newsletter-form">
+        <form action="send.php" method="POST" class="newsletter-form">
           <input
             type="text"
             class="newsletter-form__input"
             placeholder="Your email address"
+            name="email"
           />
           <button class="newsletter-form__button">Send</button>
         </form>
@@ -524,7 +526,9 @@
                 <a href="#" class="footer__link">Deals.mu loyalty program</a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Deals.mu loyalty program</a>
+                <a href="#" class="footer__link"
+                  >Promote your Business on BTP</a
+                >
               </li>
             </ul>
           </div>
@@ -584,9 +588,10 @@
                   class="footer__icon"
                   alt="phone-call"
                 />
-                tel (business hours) : 269 1500 Tel (hotline) Monday - Saturday:
-                52-56-61-38 (08:00 am – 20:00 pm) Tel (hotline) Sunday:
-                52-56-61-38 (08:00 am – 14:00 pm)
+                tel (business hours) : 269 1500 <br />
+                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
+                pm) <br />
+                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
               </li>
               <li class="footer__item footer__item_mb-2">
                 <img
@@ -601,20 +606,23 @@
           <!-- /.footer__contact-details -->
           <div class="footer__list footer__contact-form">
             <h3 class="footer__title">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 placeholder="Your Full Name"
                 class="input footer__input"
+                name="name"
               />
               <input
                 type="text"
                 placeholder="Phone Number"
                 class="input footer__input"
+                name="phone"
               />
               <textarea
                 class="footer__message"
                 placeholder="message"
+                name="message"
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">*Required Fields</span>
@@ -637,6 +645,38 @@
       <!-- /.container -->
     </section>
     <!-- /.footer -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <h3 class="modal__title">Booking</h3>
+        <a href="#" class="modal__close">
+          <img src="./img/close.svg" alt="icon:modal" class="modal__icon" />
+        </a>
+        <form action="#" class="modal__form">
+          <input
+            type="text"
+            placeholder="Your Full Name"
+            class="input modal__input"
+          />
+          <input
+            type="text"
+            placeholder="Phone Number"
+            class="input modal__input"
+          />
+          <input type="text" placeholder="Email" class="input modal__input" />
+          <textarea
+            class="message modal__message"
+            placeholder="message"
+          ></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">*Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
