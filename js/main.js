@@ -43,7 +43,13 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay_visible");
     modalDialog.addClass("modal__dialog_visible");
+    $(document).keydown(function (e) {
+      if (e.keyCode === 27) {
+        closeModal(event);
+      }
+    });
   }
+
   function closeModal(event) {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
