@@ -81,7 +81,11 @@
   .info
     grid-column: span 3
     &__icon
-      display: none         
+      display: none
+  .modal
+    &__button
+      margin: 0 0 10px 0
+      max-width: none                
 @media (max-width: 768px)
   body
     padding-top: 90px
@@ -140,7 +144,8 @@
         justify-content: space-between
         flex-direction: column
         border: none
-        cursor: pointer        
+        cursor: pointer
+        outline: none        
   .menu
     &-button
       &__line
@@ -209,6 +214,10 @@
       font-weight: 600
       font-size: 12px
       line-height: 16px
+  .modal
+    &__dialog
+      padding: 30px 30px
+            
 @media (max-width: 576px)
   .container
     max-width: 280px  
@@ -263,6 +272,7 @@
         grid-column: 1
     &__input
       flex-basis: 100%
+  
         
 
 

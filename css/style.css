@@ -17,6 +17,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  outline: none;
+}
+
 .input {
   min-height: 50px;
   padding: 18px 0 17px 22px;
@@ -1376,7 +1380,6 @@ template {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   max-width: 478px;
-  width: 100%;
   min-height: 487px;
   padding: 33px 88px;
   background-color: #0A223D;
@@ -1559,6 +1562,10 @@ template {
   .info__icon {
     display: none;
   }
+  .modal__button {
+    margin: 0 0 10px 0;
+    max-width: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1644,6 +1651,7 @@ template {
             flex-direction: column;
     border: none;
     cursor: pointer;
+    outline: none;
   }
   .menu-button__line {
     width: 16px;
@@ -1742,6 +1750,9 @@ template {
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
+  }
+  .modal__dialog {
+    padding: 30px 30px;
   }
 }
 
