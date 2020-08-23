@@ -1562,6 +1562,10 @@ template {
   .info__icon {
     display: none;
   }
+  .modal__dialog {
+    max-width: none;
+    width: 95%;
+  }
   .modal__dialog_visible {
     padding: 15px 15px;
   }
