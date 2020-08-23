@@ -1567,7 +1567,7 @@ template {
     width: 95%;
   }
   .modal__dialog_visible {
-    padding: 15px 15px;
+    padding: 88px 88px;
   }
   .modal__input {
     max-width: none;
@@ -1862,6 +1862,9 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .modal__dialog_visible {
+    padding: 20px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
