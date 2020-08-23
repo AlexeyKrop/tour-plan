@@ -83,6 +83,13 @@
     &__icon
       display: none
   .modal
+    &__dialog    
+      &_visible
+        padding: 15px 15px
+    &__input
+      max-width: none
+    &__message
+      max-width: none      
     &__button
       margin: 0 0 10px 0
       max-width: none                
@@ -105,6 +112,9 @@
   .navbar
     &-menu
       &__list
+        display: flex
+        flex-direction: column
+        align-items: center
         padding-top: 20px
       &_visited
         display: block
@@ -214,9 +224,7 @@
       font-weight: 600
       font-size: 12px
       line-height: 16px
-  .modal
-    &__dialog
-      padding: 30px 30px
+
             
 @media (max-width: 576px)
   .container
