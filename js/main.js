@@ -57,4 +57,20 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
   }
+  $(".modal__form").validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Укажите имя",
+        minlength: "не больше 2 букв",
+      },
+      email: {
+        required: "Введите ваш email",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+      phone: {
+        required: "Телефон обязателен",
+      },
+    },
+  });
 });

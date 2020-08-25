@@ -654,18 +654,28 @@
           <a href="#" class="modal__close">
             <img src="./img/close.svg" alt="icon:modal" class="modal__icon" />
           </a>
-          <form action="#" class="modal__form">
+          <form action="send.php" method="POST" class="modal__form">
             <input
               type="text"
               placeholder="Your Full Name"
               class="input modal__input"
+              name="name"
+              required
             />
             <input
-              type="text"
+              type="tel"
               placeholder="Phone Number"
               class="input modal__input"
+              name="phone"
+              required
             />
-            <input type="text" placeholder="Email" class="input modal__input" />
+            <input
+              type="email"
+              placeholder="Email"
+              class="input modal__input"
+              name="email"
+              required
+            />
             <textarea
               class="message modal__message"
               placeholder="message"
@@ -683,6 +693,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
