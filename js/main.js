@@ -63,7 +63,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Enter your name",
-          minlength: "не больше 2 букв",
+          minlength: "Name must contain more than 2 characters",
         },
         email: {
           required: "Enter your email",
@@ -71,6 +71,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Enter your phone",
+          maxlength: "the number must contain at least 11 characters",
         },
       },
     });
