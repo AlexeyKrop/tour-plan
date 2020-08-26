@@ -62,15 +62,15 @@ $(document).ready(function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Укажите имя",
+          required: "Enter your name",
           minlength: "не больше 2 букв",
         },
         email: {
-          required: "Введите ваш email",
+          required: "Enter your email",
           email: "Your email address must be in the format of name@domain.com",
         },
         phone: {
-          required: "Телефон обязателен",
+          required: "Enter your phone",
         },
       },
     });
@@ -78,4 +78,5 @@ $(document).ready(function () {
   $(".form").ready(function () {
     $("#phone").mask("+7 (999) 999-99-99");
   });
+  AOS.init();
 });

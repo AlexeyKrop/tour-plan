@@ -9,13 +9,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-right">
             <img
               src="./img/header-logo.svg"
               alt="Best Tour Plan logo"
@@ -25,6 +26,7 @@
           <form
             action="#"
             class="search navbar__search navbar__search_mobile_hidden"
+            data-aos="fade-up"
           >
             <input
               type="text"
@@ -40,6 +42,7 @@
               src="./img/avatar-natan.jpg"
               alt="user Nathan"
               class="user__avatar"
+              data-aos="fade-down"
             />
             <span class="user__name">Nathan</span>
           </a>
@@ -188,7 +191,7 @@
           </div>
           <!-- /.swiper-container -->
           <div class="hotel-wrap">
-            <div class="booking">
+            <div class="booking" data-aos="zoom-out-up">
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__starts">price starts as</span>
@@ -412,7 +415,12 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <img
               src="./img/active-1.jpg"
               alt="The curious corner of chamare"
@@ -425,7 +433,12 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <img
               src="./img/active-2.jpg"
               alt="Gymkhana club golf course"
@@ -438,7 +451,12 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <img
               src="./img/active-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -451,7 +469,12 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <img
               src="./img/active-4.jpg"
               alt="The blue marine discovery quest"
@@ -675,6 +698,7 @@
               placeholder="Phone Number"
               class="input modal__input"
               name="phone"
+              maxlength="11"
               required
             />
             <input
@@ -703,6 +727,7 @@
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
