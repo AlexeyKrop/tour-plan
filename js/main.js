@@ -71,7 +71,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Enter your phone",
-          maxlength: "the number must contain at least 11 characters",
+          minlength: "The number must contain at least 10 characters",
         },
       },
     });

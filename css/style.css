@@ -1309,6 +1309,8 @@ template {
 .footer__input {
   width: 100%;
   margin-bottom: 12px;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
 }
 
 .footer__input-group {
@@ -1333,6 +1335,9 @@ template {
 }
 
 .footer__info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
