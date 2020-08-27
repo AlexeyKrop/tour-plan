@@ -1298,9 +1298,9 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1308,6 +1308,7 @@ template {
 
 .footer__input {
   width: 100%;
+  margin-bottom: 12px;
 }
 
 .footer__input-group {
