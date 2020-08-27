@@ -78,6 +78,7 @@ $(document).ready(function () {
   });
   $(".form").ready(function () {
     $("#phone").mask("+7 (999) 999-99-99");
+    $("#tel").mask("+7 (999) 999-99-99");
   });
   AOS.init();
 });
