@@ -6,10 +6,11 @@
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr)) 
     grid-gap: 20px   
-    grid-auto-rows: minmax(100px, min-content)
+    grid-auto-rows: minmax(110px, min-content)
   &__title
     padding: 0
     margin: 0 0 16px 0
+    font-family: Mulish
     font-style: normal
     font-weight: 700
     font-size: 18px
@@ -22,15 +23,22 @@
     padding: 0
     margin: 0
     list-style-type: none
-  &__item   
+  &__item
+    font-family: Mulish   
     font-style: normal
     font-weight: 400
     font-size: 14px
     line-height: 160%
     color: $footer-text-color
   &__text
+    font-family: Mulish
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%  
     color: $footer-text-color
-    margin-bottom: 20px
+    margin-bottom: 21px
+    margin-top: 23px
   &__link
     text-decoration: none
     color: inherit  
@@ -73,7 +81,12 @@
   &__input
     width: 100%
     margin-bottom: 12px
-    flex-basis: 48%    
+    flex-basis: 48%
+    font-family: Muli
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px    
     &-group
       width: 100%
       max-width: 255px      
@@ -81,9 +94,11 @@
       margin-bottom: 15px   
   &__message
     flex-basis: 100%
-    min-height: 123px
-    padding: 18px 23px
+    min-height: 123px    
     margin-bottom: 23px
+    border-radius: 4px
+    padding: 18px 0 17px 22px
+    font-family: Mulish
     font-style: normal
     font-weight: normal
     font-size: 12px
@@ -107,11 +122,7 @@
     line-height: 15px
     color: #E0E0E0
 .info
-  grid-column: 2 / 5
-  align-self: end
-  display: flex
-  align-items: center
-  justify-content: space-between
+  grid-column: 2 / 5  
   &__subtitle
     font-style: normal
     font-weight: 400

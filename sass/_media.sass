@@ -59,8 +59,10 @@
     &__logo
       grid-row: 1 / 2
       height: 120px
+      
     &__categories
       grid-row: 2 / 3
+      
     &__additional
       grid-row: 2 / 3
       grid-column: span 2
@@ -69,19 +71,21 @@
       &-network
         grid-row: 1 / 2
         grid-column: span 2
-        align-self: center  
+        align-self: center
+        justify-self: center  
     &__legal
       grid-row: 2 / 3
+      grid-column: span 2
     &__contact
       &-details
-        grid-column: span 3
+        grid-column: span 3        
       &-form
         grid-column: span 3
     &__input
       &-group
         flex-basis: 48%
   .info
-    grid-column: span 3    
+    grid-column: span 4    
   .modal
     &__dialog
       max-width: none

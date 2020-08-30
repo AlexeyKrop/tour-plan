@@ -568,8 +568,9 @@ template {
 }
 
 .hotel {
-  padding-top: 24px;
+  padding-top: 20px;
   padding-bottom: 24px;
+  margin-bottom: 47px;
 }
 
 .hotel-info {
@@ -597,8 +598,11 @@ template {
 }
 
 .hotel-name {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 700;
   font-size: 24px;
-  line-height: 40px;
+  line-height: 30px;
   margin: 0 14px 0 0;
   color: #333333;
 }
@@ -701,6 +705,7 @@ template {
 }
 
 .rating {
+  padding-top: 4px;
   max-width: 65px;
   min-height: 45px;
   text-align: center;
@@ -755,6 +760,7 @@ template {
 }
 
 .booking__starts {
+  font-family: Nunito;
   font-weight: normal;
   font-size: 10px;
   line-height: 14px;
@@ -921,6 +927,12 @@ template {
   width: 100%;
   min-height: 100%;
   border: none;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #BDBDBD;
 }
 
 .newsletter-form__button {
@@ -941,10 +953,11 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 16px 0 70px 0;
 }
 
 .reviews__title {
+  font-family: Mulish;
   font-weight: 700;
   font-size: 36px;
   line-height: 45px;
@@ -1037,6 +1050,7 @@ template {
 }
 
 .reviews-slider__text {
+  font-family: Mulish;
   max-width: 537px;
   margin: 0 auto;
   font-style: normal;
@@ -1049,7 +1063,7 @@ template {
 
 .reviews-slider__button {
   position: absolute;
-  top: 35%;
+  top: 42%;
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -1181,13 +1195,14 @@ template {
       grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
       grid-template-columns: repeat(4, minmax(min-content, 1fr));
   grid-gap: 20px;
-  grid-auto-rows: minmax(100px, -webkit-min-content);
-  grid-auto-rows: minmax(100px, min-content);
+  grid-auto-rows: minmax(110px, -webkit-min-content);
+  grid-auto-rows: minmax(110px, min-content);
 }
 
 .footer__title {
   padding: 0;
   margin: 0 0 16px 0;
+  font-family: Mulish;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1207,6 +1222,7 @@ template {
 }
 
 .footer__item {
+  font-family: Mulish;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1215,8 +1231,14 @@ template {
 }
 
 .footer__text {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
   color: #BDBDBD;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
+  margin-top: 23px;
 }
 
 .footer__link {
@@ -1316,6 +1338,11 @@ template {
   margin-bottom: 12px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__input-group {
@@ -1329,8 +1356,10 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   min-height: 123px;
-  padding: 18px 23px;
   margin-bottom: 23px;
+  border-radius: 4px;
+  padding: 18px 0 17px 22px;
+  font-family: Mulish;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1371,17 +1400,6 @@ template {
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-column: 2 / 5;
-  -ms-flex-item-align: end;
-      align-self: end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .info__subtitle {
@@ -1577,11 +1595,14 @@ template {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .footer__legal {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
+    grid-column: span 2;
   }
   .footer__contact-details {
     grid-column: span 3;
@@ -1594,7 +1615,7 @@ template {
         flex-basis: 48%;
   }
   .info {
-    grid-column: span 3;
+    grid-column: span 4;
   }
   .modal__dialog {
     max-width: none;
