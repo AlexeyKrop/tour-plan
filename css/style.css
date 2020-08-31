@@ -1276,6 +1276,14 @@ template {
   display: flex;
 }
 
+.footer__item_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+}
+
 .footer__item_mb-2 {
   margin-bottom: 20px;
 }
