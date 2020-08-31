@@ -1385,6 +1385,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+  outline: none;
 }
 
 .footer__button {
@@ -1529,7 +1530,7 @@ template {
   max-width: 160px;
   width: 100%;
   margin-top: 15px;
-  margin-right: 45px;
+  margin-right: 44px;
 }
 
 .modal__info {
