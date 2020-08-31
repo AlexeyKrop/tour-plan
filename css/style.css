@@ -1729,7 +1729,7 @@ template {
     padding-top: 90px;
   }
   .container {
-    max-width: 576px;
+    max-width: 700px;
     width: 92%;
   }
   .navbar_mobile_fixed {
@@ -2112,8 +2112,12 @@ template {
     padding: 15px 15px;
     position: absolute;
     min-height: 100px;
-    height: 100%;
+    height: auto;
     overflow: auto;
+  }
+  .navbar__search_mobile_visible {
+    max-width: 243px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
