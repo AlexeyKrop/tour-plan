@@ -1724,12 +1724,12 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     padding-top: 90px;
   }
   .container {
-    max-width: 700px;
+    max-width: 576px;
     width: 92%;
   }
   .navbar_mobile_fixed {
