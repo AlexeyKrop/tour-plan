@@ -720,6 +720,7 @@ template {
 }
 
 .rating__counter {
+  font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   color: #fff;
@@ -767,11 +768,13 @@ template {
 }
 
 .booking__pricetag {
+  font-family: Nunito;
   font-weight: 800;
   font-size: 24px;
 }
 
 .booking__per-room {
+  font-family: Nunito;
   margin-top: 8px;
   font-size: 12px;
 }
@@ -815,6 +818,7 @@ template {
 }
 
 .booking__reserve {
+  font-family: Nunito;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -901,11 +905,14 @@ template {
 
 .newsletter-subscribe__title {
   margin: 0;
+  font-family: Mulish;
+  font-style: normal;
   font-weight: 300;
   font-size: 24px;
 }
 
 .newsletter-subscribe__subtitle {
+  font-family: Mulish;
   font-weight: 600;
   font-size: 36px;
   line-height: 45px;
@@ -1558,7 +1565,10 @@ template {
     padding-bottom: 22px;
   }
   .navbar-menu__link {
+    font-family: Mulish;
     font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
   }
   .hotel-slider {
     width: 100%;
@@ -1583,11 +1593,19 @@ template {
   }
   .reviews__title {
     margin: 40px 0 50px 0;
+    font-weight: 700;
     font-size: 30px;
     line-height: 38px;
   }
   .booking {
     width: 340px;
+  }
+  .booking__pricetag {
+    line-height: 33px;
+  }
+  .booking__per-room {
+    margin-top: 0px;
+    line-height: 16px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
