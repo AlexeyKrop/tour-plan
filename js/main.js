@@ -77,6 +77,17 @@ $(document).ready(function () {
       },
     });
   });
+  $(".form_2").each(function () {
+    $(this).validate({
+      errorClass: "invalid-form_2",
+      messages: {
+        email: {
+          required: "Enter your email",
+          email: "format for email-name@domain.com",
+        },
+      },
+    });
+  });
   $(".form").ready(function () {
     $("#phone").mask("+7 (999) 999-99-99");
     $("#tel").mask("+7 (999) 999-99-99");

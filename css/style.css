@@ -69,6 +69,12 @@ button {
   color: #EC1F46;
 }
 
+.invalid-form_2 {
+  position: absolute;
+  color: #EC1F46;
+  bottom: 0;
+}
+
 iframe {
   width: 100%;
   height: 100%;
