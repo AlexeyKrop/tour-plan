@@ -24,6 +24,7 @@ $(document).ready(function () {
       enabled: true,
       onlyInViewport: false,
     },
+    autoHeight: true,
   });
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", function () {
