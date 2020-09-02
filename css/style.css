@@ -1696,8 +1696,9 @@ template {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
-    grid-column: span 2;
+    grid-column: span 1;
     margin-left: 21px;
+    margin-right: -108px;
   }
   .footer__social-network {
     -ms-grid-row: 1;
@@ -1709,12 +1710,14 @@ template {
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
+    margin-right: 32px;
   }
   .footer__legal {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
     grid-column: span 2;
+    margin-right: 13px;
   }
   .footer__contact-details {
     grid-column: span 3;
@@ -1731,7 +1734,7 @@ template {
         flex-basis: 48%;
   }
   .footer__title {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
   .footer__title_s {
@@ -2026,6 +2029,12 @@ template {
   .breadcrumb__list {
     padding-top: 4px;
   }
+  .newsletter {
+    margin-bottom: 40px;
+  }
+  .newsletter-wrapper {
+    padding-left: 10px;
+  }
   .newsletter-subscribe {
     margin-bottom: 37px;
   }
@@ -2071,7 +2080,7 @@ template {
   .map {
     height: 172px;
     min-height: 172px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .booking {
     margin-bottom: 20px;
@@ -2130,7 +2139,7 @@ template {
   }
   .footer__title {
     margin-bottom: 23px;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 23px;
   }
   .footer__additional {
@@ -2200,7 +2209,7 @@ template {
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-bottom: 10px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .footer__message {
     margin-bottom: 12px;
@@ -2218,6 +2227,7 @@ template {
   }
   .info__subtitle {
     font-size: 10px;
+    margin-right: 12px;
   }
   .info__icon {
     -ms-grid-row: 8;
@@ -2229,7 +2239,7 @@ template {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    margin-top: -53px;
+    margin-top: -66px;
   }
   .modal__wrapper {
     position: fixed;
