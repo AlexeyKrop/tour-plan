@@ -488,6 +488,7 @@ template {
   top: 0px;
   right: 0px;
   border: none;
+  cursor: pointer;
 }
 
 .user {
