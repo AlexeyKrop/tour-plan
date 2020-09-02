@@ -2227,7 +2227,7 @@ template {
   }
   .info__subtitle {
     font-size: 10px;
-    margin-right: 12px;
+    margin-right: 5px;
   }
   .info__icon {
     -ms-grid-row: 8;
