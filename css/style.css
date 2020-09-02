@@ -2225,8 +2225,11 @@ template {
         -ms-grid-row-align: start;
         align-self: start;
   }
+  .info__text {
+    width: 290px;
+  }
   .info__subtitle {
-    font-size: 10px;
+    font-size: 12px;
     margin-right: 5px;
   }
   .info__icon {
